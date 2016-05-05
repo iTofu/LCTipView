@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source_files = "LCTipView/*"
   s.requires_arc = true
 
-  s.dependency "Masonry", "~> 1.0.0"
-  s.dependency "GPUImage", "~> 0.1.1"
+  s.dependency "Masonry", "1.0.0"
+  s.dependency "GPUImage", "0.1.1"
 
 end
