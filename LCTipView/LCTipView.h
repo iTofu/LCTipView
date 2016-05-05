@@ -8,7 +8,7 @@
 //  Mail: mailto:devtip@163.com
 //  Blog: http://LeoDev.me
 //
-//  V 1.0.1
+//  V 1.0.2
 //  Project home page: https://github.com/iTofu/LCTipView
 
 #import <UIKit/UIKit.h>
