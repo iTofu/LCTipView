@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCTipView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A lovely HUD~ Support: http://LeoDev.me"
   s.homepage     = "https://github.com/iTofu/LCTipView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
