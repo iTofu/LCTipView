@@ -18,13 +18,15 @@ In me the tiger sniffs the rose.
 
 Welcome to my blog: <http://LeoDev.me> ✨
 
-[**中文介绍**](https://github.com/iTofu/LCBannerView/blob/master/README-zh_CN.md)
+[**中文介绍**](https://github.com/iTofu/LCTipView/blob/master/README-zh_CN.md)
 
 
 
 ## Introduction
 
 Just a HUD, look cute~ ☺️
+
+This project uses the [Masonry](https://github.com/SnapKit/Masonry) and [GPUImage](https://github.com/BradLarson/GPUImage).
 
 If you like it, please give this project a star, thank you! ⭐️
 
