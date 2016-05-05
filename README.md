@@ -76,6 +76,12 @@ Just drag the LCTipView folder into your project.
     [LCTipView hide];
     ````
 
+* You could do some operations in the complete block.
+
+  ````objc
+  typedef void(^LCTipViewCompleteBlock)(NSInteger buttonIndex);
+  ````
+
 
 ## Examples
 
