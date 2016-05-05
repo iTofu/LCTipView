@@ -114,6 +114,10 @@ Just drag the LCTipView folder into your project.
 
 ## Release
 
+### V 1.0.1
+
+* Bug fixed: Couldn't find buttons' image.
+
 ### V 1.0.0
 
 * First release.

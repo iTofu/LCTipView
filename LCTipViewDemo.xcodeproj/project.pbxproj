@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33169031CDB36B500E613E5 /* LCTipView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33169021CDB36B500E613E5 /* LCTipView.bundle */; };
 		B34DFC8B1CDA0249001810CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DFC8A1CDA0249001810CD /* main.m */; };
 		B34DFC8E1CDA0249001810CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DFC8D1CDA0249001810CD /* AppDelegate.m */; };
 		B34DFC911CDA0249001810CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DFC901CDA0249001810CD /* ViewController.m */; };
@@ -209,6 +210,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B33169021CDB36B500E613E5 /* LCTipView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTipView.bundle; sourceTree = "<group>"; };
 		B34DFC861CDA0248001810CD /* LCTipViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCTipViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34DFC8A1CDA0249001810CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B34DFC8C1CDA0249001810CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 		B34DFCBC1CDA0252001810CD /* LCTipView */ = {
 			isa = PBXGroup;
 			children = (
+				B33169021CDB36B500E613E5 /* LCTipView.bundle */,
 				B34DFCBD1CDA0269001810CD /* LCTipView.h */,
 				B34DFCBE1CDA0269001810CD /* LCTipView.m */,
 				B34DFF101CDA0975001810CD /* UIView+LCTipView.h */,
@@ -1159,6 +1162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34DFCDB1CDA052E001810CD /* Info.plist in Resources */,
+				B33169031CDB36B500E613E5 /* LCTipView.bundle in Resources */,
 				B34DFC991CDA0249001810CD /* LaunchScreen.storyboard in Resources */,
 				B34DFC961CDA0249001810CD /* Assets.xcassets in Resources */,
 				B34DFC941CDA0249001810CD /* Main.storyboard in Resources */,

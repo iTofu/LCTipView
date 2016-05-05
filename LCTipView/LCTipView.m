@@ -104,10 +104,16 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             make.height.equalTo(@45.0f);
         }];
         
+        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"LCTipView" ofType:@"bundle"];
+        NSString *btnImagePath1 = [bundlePath stringByAppendingPathComponent:@"LCTipView_login_btn_short@2x.png"];
+        NSString *btnImagePath2 = [bundlePath stringByAppendingPathComponent:@"LCTipView_login_btn_short_2@2x.png"];
+        UIImage *btnImage1 = [UIImage imageWithContentsOfFile:btnImagePath1];
+        UIImage *btnImage2 = [UIImage imageWithContentsOfFile:btnImagePath2];
+        
         UIButton *btn1       = [[UIButton alloc] init];
         btn1.titleLabel.font = [UIFont systemFontOfSize:17.0f];
         [btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn1 setBackgroundImage:[UIImage imageNamed:@"login_btn_short"] forState:UIControlStateNormal];
+        [btn1 setBackgroundImage:btnImage1 forState:UIControlStateNormal];
         [btn1 addTarget:self action:@selector(btn1Clicked) forControlEvents:UIControlEventTouchUpInside];
         [btnBgView addSubview:btn1];
         [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -118,7 +124,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         UIButton *btn2       = [[UIButton alloc] init];
         btn2.titleLabel.font = [UIFont systemFontOfSize:17.0f];
         [btn2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn2 setBackgroundImage:[UIImage imageNamed:@"login_btn_short_2"] forState:UIControlStateNormal];
+        [btn2 setBackgroundImage:btnImage2 forState:UIControlStateNormal];
         [btn2 addTarget:self action:@selector(btn2Clicked) forControlEvents:UIControlEventTouchUpInside];
         [btnBgView addSubview:btn2];
         self.btn2 = btn2;
@@ -126,7 +132,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         UIButton *btn3       = [[UIButton alloc] init];
         btn3.titleLabel.font = [UIFont systemFontOfSize:17.0f];
         [btn3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [btn3 setBackgroundImage:[UIImage imageNamed:@"login_btn_short_2"] forState:UIControlStateNormal];
+        [btn3 setBackgroundImage:btnImage2 forState:UIControlStateNormal];
         [btn3 addTarget:self action:@selector(btn3Clicked) forControlEvents:UIControlEventTouchUpInside];
         [btnBgView addSubview:btn3];
         self.btn3 = btn3;
