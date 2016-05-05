@@ -26,11 +26,26 @@
         make.edges.equalTo(self.view);
     }];
     
-    [self performSelector:@selector(hhh) withObject:nil afterDelay:2.0f];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [btn addTarget:self action:@selector(hhh) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(40, 40));
+    }];
+    
+    
+//    [self performSelector:@selector(hhh) withObject:nil afterDelay:1.0f];
 }
 
 - (void)hhh {
-    [LCTipView showWithImage:nil title:nil buttonTitles:nil];
+    [LCTipView showWithImage:[UIImage imageNamed:@"login_no_binding"]
+                       title:@"你尚未绑定学校，请联系管理员添加"
+                buttonTitles:@[@"关闭"]
+                    complete:^(NSInteger buttonIndex) {
+                        
+                        NSLog(@"Clicked: %d", (int)buttonIndex);
+                    }];
 }
 
 @end

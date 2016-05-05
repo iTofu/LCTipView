@@ -13,24 +13,19 @@ typedef void(^LCTipViewCompleteBlock)(NSInteger buttonIndex);
 @interface LCTipView : UIView
 
 /**
- *  Image.
+ *  Image
  */
 @property (nonatomic, strong) UIImage *image;
 
 /**
- *  Title.
+ *  Title
  */
 @property (nonatomic, copy) NSString *title;
 
 /**
- *  Button titles.
+ *  Button titles
  */
 @property (nonatomic, strong) NSArray *buttonTitles;
-
-/**
- *  CompleteBlock.
- */
-@property (nonatomic, copy) LCTipViewCompleteBlock completeBlock;
 
 
 /**
@@ -47,7 +42,18 @@ typedef void(^LCTipViewCompleteBlock)(NSInteger buttonIndex);
  *  @param title        title
  *  @param buttonTitles buttonTitles
  */
-+ (void)showWithImage:(UIImage *)image title:(NSString *)title buttonTitles:(NSArray *)buttonTitles;
+/**
+ *  Show the LCTipView instance with image, title and buttons.
+ *
+ *  @param image         image
+ *  @param title         title
+ *  @param buttonTitles  buttonTitles
+ *  @param completeBlock completeBlock
+ */
++ (void)showWithImage:(UIImage *)image
+                title:(NSString *)title
+         buttonTitles:(NSArray *)buttonTitles
+             complete:(LCTipViewCompleteBlock)completeBlock;
 
 /**
  *  Hide the LCTipView instance.
