@@ -40,6 +40,16 @@ LCTipView is available on [CocoaPods](https://cocoapods.org/). Just add the foll
 pod "LCTipView"  # Podfile
 ````
 
+**Tip:** Ignore Xcode warnings when using [CocoaPods](https://cocoapods.org/):
+
+````ruby
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+# ignore warnings from a specific pod
+pod 'GPUImage', :inhibit_warnings => true
+````
+
 
 
 ## Non-CocoaPods Installation
