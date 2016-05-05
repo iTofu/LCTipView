@@ -18,16 +18,32 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface LCTipView ()
 
-@property (nonatomic, weak) UIImageView *imageView;
-@property (nonatomic, weak) UILabel     *titleLabel;
-@property (nonatomic, weak) UIButton    *btn1;
-@property (nonatomic, weak) UIButton    *btn2;
-@property (nonatomic, weak) UIButton    *btn3;
+/**
+ *  Image
+ */
+@property (nonatomic, strong) UIImage *image;
+
+/**
+ *  Title
+ */
+@property (nonatomic, copy) NSString *title;
+
+/**
+ *  Button titles
+ */
+@property (nonatomic, strong) NSArray *buttonTitles;
 
 /**
  *  Complete block
  */
 @property (nonatomic, copy) LCTipViewCompleteBlock completeBlock;
+
+@property (nonatomic, weak) UIView      *bgView;
+@property (nonatomic, weak) UIImageView *imageView;
+@property (nonatomic, weak) UILabel     *titleLabel;
+@property (nonatomic, weak) UIButton    *btn1;
+@property (nonatomic, weak) UIButton    *btn2;
+@property (nonatomic, weak) UIButton    *btn3;
 
 @end
 
@@ -65,6 +81,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             make.center.equalTo(self);
             make.size.mas_equalTo(CGSizeMake(280.0f, 334.0f));
         }];
+        self.bgView = bgView;
         
         // Image view
         UIImageView *imageView = [[UIImageView alloc] init];
@@ -137,7 +154,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             make.top.equalTo(imageView.mas_bottom).with.offset(20.0f);
             make.left.equalTo(bgView).with.offset(26.0f);
             make.right.equalTo(bgView).with.offset(-26.0f);
-            make.bottom.equalTo(btnBgView.mas_top).with.offset(-20.0f);
+            make.height.equalTo(@60.0f);
         }];
         self.titleLabel = titleLabel;
     }
@@ -183,6 +200,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         tipView.btn3.hidden = YES;
         
         [tipView.btn1 setTitle:buttonTitles[0] forState:UIControlStateNormal];
+        
+        [tipView.bgView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280.0f, 334.0f));
+        }];
     } else if (buttonTitles.count == 2) {
         tipView.btn1.hidden = YES;
         tipView.btn2.hidden = NO;
@@ -190,6 +211,18 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         
         [tipView.btn2 setTitle:buttonTitles[0] forState:UIControlStateNormal];
         [tipView.btn3 setTitle:buttonTitles[1] forState:UIControlStateNormal];
+        
+        [tipView.bgView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280.0f, 334.0f));
+        }];
+    } else {
+        tipView.btn1.hidden = YES;
+        tipView.btn2.hidden = YES;
+        tipView.btn3.hidden = YES;
+        
+        [tipView.bgView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280.0f, 334.0f - 59.0f));
+        }];
     }
     
     tipView.hidden = NO;

@@ -5,28 +5,17 @@
 //  Created by Leo on 16/5/4.
 //  Copyright © 2016年 http://LeoDev.me. All rights reserved.
 //
+//  Mail: mailto:devtip@163.com
+//  Blog: http://LeoDev.me
+//
+//  V 1.0.0
+//  Project home page: https://github.com/iTofu/LCTipView
 
 #import <UIKit/UIKit.h>
 
 typedef void(^LCTipViewCompleteBlock)(NSInteger buttonIndex);
 
 @interface LCTipView : UIView
-
-/**
- *  Image
- */
-@property (nonatomic, strong) UIImage *image;
-
-/**
- *  Title
- */
-@property (nonatomic, copy) NSString *title;
-
-/**
- *  Button titles
- */
-@property (nonatomic, strong) NSArray *buttonTitles;
-
 
 /**
  *  Instance.
