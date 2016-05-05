@@ -75,6 +75,24 @@ Just drag the LCTipView folder into your project.
     ````
 
 
+## Examples
+
+* Origin view
+
+  ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo01.png)
+
+* One button
+
+  ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo02.png)
+
+* Two buttons
+
+  ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo03.png)
+
+* No buttons, Disappears after 3 seconds (You could customize the time reference the Demo project)
+
+  ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo04.png)
+
 
 ## Release
 

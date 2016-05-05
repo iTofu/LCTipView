@@ -26,8 +26,11 @@ In me the tiger sniffs the rose.
 ## 示例
 
 ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo01.png)
+---
 ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo02.png)
+---
 ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo03.png)
+---
 ![LCTipView](https://raw.githubusercontent.com/iTofu/LCTipView/master/LCTipViewDemo04.png)
 
 
