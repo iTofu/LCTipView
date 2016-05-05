@@ -37,7 +37,7 @@ If you like it, please give this project a star, thank you! ⭐️
 LCTipView is available on [CocoaPods](https://cocoapods.org/). Just add the following to your project Podfile:
 
 ````ruby
-pod "LCTipView"  # Podfile
+pod 'LCTipView'  # Podfile
 ````
 
 **Tip:** Ignore Xcode warnings when using [CocoaPods](https://cocoapods.org/):
